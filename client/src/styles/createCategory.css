@@ -1,0 +1,111 @@
+.create-cat-container {
+  background: #303030;
+  min-height: 81vh;
+}
+
+.create-cat-feild {
+  padding-left: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.create-cat-feild > h1 {
+  color: #01dbc2;
+  filter: drop-shadow(0 0 10px #01dbc2);
+}
+
+.create-cat-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.create-cat-form > label {
+  margin-bottom: 20px;
+  color: #01dbc2;
+  filter: drop-shadow(0 0 10px #01dbc2);
+}
+
+.catSubmit-btn {
+  width: 100%;
+  border: none;
+  background-color: #01dbc2;
+  filter: drop-shadow(0 0 10px #01dbc2);
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.catSubmit-btn:hover {
+  color: #01dbc2;
+  background: transparent;
+  border-color: #01dbc2;
+  border: 1px solid #01dbc2;
+}
+
+.category-box {
+  background-color: #292929;
+  width: 75%;
+  border-radius: 5px;
+}
+
+.cat-table-head > tr {
+  /* display: flex;
+  justify-content: space-between; */
+}
+
+.cat-table-head > tr > th {
+  /* margin-left: 50px; */
+  color: #01dbc2;
+  filter: drop-shadow(0 0 10px #01dbc2);
+}
+
+.cat-table {
+  width: 100%;
+}
+
+.cat-table-btn {
+  width: 40%;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  color: #01dbc2;
+  background: transparent;
+  border-color: #01dbc2;
+  border: 1px solid #01dbc2;
+  border-radius: 5px;
+}
+
+.cat-table-btn:hover {
+  border: none;
+  background-color: #01dbc2;
+  filter: drop-shadow(0 0 10px #01dbc2);
+  color: white;
+  border-radius: 5px;
+}
+
+.cat-table-action {
+  padding-left: 210px !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.cat-table-name {
+  padding-left: 50px;
+}
+
+.btn-adjust {
+  margin-left: 10px !important;
+}
+
+.cat-table-catName {
+  padding-left: 30px;
+  color: #01dbc2;
+}
+
+.center {
+  display: flex;
+}

@@ -1,0 +1,69 @@
+.createProduct-container {
+  background: #303030;
+  min-height: 81vh;
+}
+
+.createProduct-flex {
+  display: flex;
+  margin-right: 20px;
+}
+
+.createP-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.createP-flex > h1 {
+  color: #01dbc2;
+  filter: drop-shadow(0 0 10px #01dbc2);
+}
+
+.createProduct-btn {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  background-color: #01dbc2;
+  filter: drop-shadow(0 0 10px #01dbc2);
+  color: white;
+  padding: 5px 0 5px 0;
+}
+
+.createProduct-btn:hover {
+  color: #01dbc2;
+  background: transparent;
+  border-color: #01dbc2;
+  border: 1px solid #01dbc2;
+}
+
+.createP-input {
+  background-color: #414040;
+  border: 1px solid #6e6e6e;
+}
+
+.createP-input::placeholder {
+  color: rgb(172, 166, 166);
+}
+
+.createP-select {
+  background-color: #414040;
+  border: 1px solid #6e6e6e;
+}
+
+.createP-select > option {
+  background-color: #414040;
+}
+
+.createP-select::placeholder {
+  color: #303030;
+}
+
+/* option:not(:first-of-type) {
+  color: black;
+} */
+
+.createP-select-div > select option {
+  background: #6e6e6e;
+}

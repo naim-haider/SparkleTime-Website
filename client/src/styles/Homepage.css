@@ -1,0 +1,141 @@
+.home-page h1 {
+  color: #01dbc2;
+  filter: drop-shadow(0 0 10px #01dbc2);
+  font-family: "Playfair Display", serif;
+}
+
+.home-page {
+  display: flex;
+  min-height: 100vh;
+  flex-wrap: wrap;
+  background: #303030;
+}
+.home-page .card {
+  background-color: #3c504ef6;
+  width: 18rem;
+}
+
+.card-heading {
+  color: #01dbc2;
+}
+
+.resetFilter-btn {
+  padding: 5px 0 5px 0;
+  margin-left: -8px;
+}
+
+.card-text {
+  color: rgb(172, 166, 166);
+}
+
+.home-page .card-name-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.home-page .card-price {
+  color: rgb(172, 166, 166);
+  font-weight: bold;
+}
+.home-page button {
+  border-radius: 0;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 14px;
+}
+
+.addtocart {
+  color: #01dbc2 !important;
+  border: 1px solid #01dbc2;
+  background: transparent;
+  border-radius: 50;
+  padding: 5px 0 5px 0;
+}
+
+.addtocart:hover {
+  background-color: #01dbc2;
+  filter: drop-shadow(0 0 10px #01dbc2);
+  color: white !important;
+  border: none;
+  border-radius: 50;
+}
+
+.more-detail {
+  background-color: #01dbc2;
+  filter: drop-shadow(0 0 10px #01dbc2);
+  color: white;
+  border: none;
+  border-radius: 50;
+}
+.more-detail:hover {
+  color: #01dbc2 !important;
+  border: 1px solid #01dbc2;
+  background: transparent;
+  border-radius: 50;
+}
+
+.more-detail .home-page .card-text {
+  color: rgb(172, 166, 166);
+}
+
+.home-page .card img:hover {
+  transform: scale(0.9);
+}
+
+.home-page .card-img-top {
+  height: 300px !important;
+}
+/* ==================
+filters
+============== */
+.filters h4 {
+  margin-top: 100px;
+  color: #01dbc2;
+  filter: drop-shadow(0 0 10px #01dbc2);
+  border-bottom: 1px solid #15685e;
+}
+
+.ant-checkbox-wrapper {
+  color: rgb(110, 109, 109);
+}
+.ant-checkbox-wrapper:hover {
+  color: #01dbc2;
+  filter: drop-shadow(0 0 10px #01dbc2);
+}
+
+.ant-checkbox-wrapper {
+  margin: 2px;
+}
+.ant-radio-wrapper {
+  margin-bottom: 5px !important;
+  margin-left: 10px;
+  color: rgb(110, 109, 109);
+}
+
+.ant-radio-wrapper:hover {
+  color: #01dbc2;
+  filter: drop-shadow(0 0 10px #01dbc2);
+}
+
+.filters button {
+  width: 100%;
+  border: none;
+  border-radius: 50;
+  margin-top: 20px;
+  background-color: #01dbc2;
+  filter: drop-shadow(0 0 10px #01dbc2);
+  color: white;
+}
+
+.filters button:hover {
+  color: #01dbc2;
+  background: transparent;
+  border-color: #01dbc2;
+  border: 1px solid #01dbc2;
+}
+
+.card-section {
+  margin-bottom: 12px;
+}

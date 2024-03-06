@@ -1,0 +1,63 @@
+.adminD-body {
+  background: #303030;
+  min-height: 81vh;
+  width: 100%;
+}
+
+.adminD-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.AdminPanel {
+  width: 400px;
+  background: transparent;
+  margin-right: 60px;
+  margin-left: 60px;
+}
+
+.AdminDetails-container {
+  width: 800px;
+  margin-left: 150px;
+}
+
+.AdminDetails-container > h1 {
+  color: #01dbc2;
+  filter: drop-shadow(0 0 10px #01dbc2);
+  text-transform: uppercase;
+}
+
+.AdminDetails {
+  background: transparent;
+  border: 1px solid #01dbc2;
+  color: rgb(172, 166, 166);
+}
+
+.vLine {
+  border-right: 1px solid #01dbc2;
+  min-height: 81vh;
+}
+
+.adminpanel-body-container {
+  background: transparent;
+  border: 1px solid #01dbc2;
+  border-radius: 5px;
+  color: rgb(172, 166, 166);
+  padding: 10px 0 10px 0;
+  font-size: 25px;
+}
+
+.Navlink {
+  color: #01dbc2;
+}
+
+.Navlink:hover {
+  color: #01dbc2;
+  filter: drop-shadow(0 0 10px #01dbc2);
+}
+
+.adminpanel-body > h1 {
+  color: #01dbc2;
+  filter: drop-shadow(0 0 10px #01dbc2);
+}

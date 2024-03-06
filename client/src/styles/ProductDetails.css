@@ -1,0 +1,122 @@
+.product-details {
+  padding: 100px !important;
+}
+
+.more-details {
+  background: #303030;
+}
+
+.product-details-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(172, 166, 166);
+}
+.product-details-info > h1 {
+  color: #01dbc2;
+  filter: drop-shadow(0 0 10px #01dbc2);
+}
+
+.product-details-info h6 {
+  margin-bottom: 20px !important;
+}
+
+.similar-products .card {
+  background-color: rgba(128, 128, 128, 0.097);
+  width: 18rem;
+}
+
+.similar-products .card-name-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.similar-products .card-price {
+  color: green;
+  font-weight: bold;
+}
+
+.similar-products > h6 {
+  color: #01dbc2;
+  filter: drop-shadow(0 0 10px #01dbc2);
+}
+.similar-products button {
+  border-radius: 0;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.similar-cardbody {
+  background-color: #3c504ef6;
+}
+
+.card-heading {
+  color: #01dbc2;
+}
+
+.card-text {
+  color: rgb(172, 166, 166) !important;
+}
+
+.card-price {
+  color: rgb(172, 166, 166) !important;
+  font-weight: bold;
+}
+
+.addtocart-btn {
+  border: none;
+  border-radius: 50;
+  background-color: #01dbc2;
+  filter: drop-shadow(0 0 10px #01dbc2);
+  color: white;
+}
+
+.addtocart-btn:hover {
+  background: transparent;
+  color: #01dbc2;
+  border: 1px solid #01dbc2;
+}
+
+.similar-products .card-text {
+  color: rgb(90, 89, 89);
+}
+
+.similar-products .card img:hover {
+  transform: scale(0.9);
+}
+
+.similar-products .card-img-top {
+  height: 300px !important;
+}
+
+hr {
+  border: 1px solid #01dbc2;
+  filter: drop-shadow(0 0 15px #01dbc2);
+}
+
+.moredetail-btn {
+  color: #01dbc2 !important;
+  border: 1px solid #01dbc2;
+  background: transparent;
+  border-radius: 50;
+  padding: 5px 0 5px 0;
+}
+
+.moredetail-btn:hover {
+  background-color: #01dbc2;
+  filter: drop-shadow(0 0 10px #01dbc2);
+  color: white !important;
+  border: none;
+  border-radius: 50;
+}
+
+.product-img > img {
+  width: 350px;
+  margin-left: 30px;
+  border-radius: 5px;
+  box-shadow: #01dbc2 0px 5px 15px;
+}

@@ -1,0 +1,19 @@
+.footerItem-background {
+  background: #303030;
+  min-height: 81vh;
+}
+
+.aboutus-text span {
+  color: rgb(172, 166, 166) !important;
+}
+
+.contactUs-div {
+  display: flex;
+  flex-direction: column;
+  color: rgb(172, 166, 166) !important;
+}
+
+.contactUs-div > h1 {
+  background: #3c504ef6;
+  color: #01dbc2;
+}

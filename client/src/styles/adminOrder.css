@@ -1,0 +1,33 @@
+.adminOrderContainer {
+  background: #303030;
+  min-height: 81vh;
+  display: flex;
+}
+
+.adminOrder-section > h1 {
+  color: #01dbc2;
+  filter: drop-shadow(0 0 10px #01dbc2);
+  margin-top: 10px;
+}
+
+.adminOrder-section {
+  margin-left: 50px;
+}
+
+.adminOrderProductdetail {
+  background: transparent;
+  border: 1px solid #01dbc2;
+}
+.adminAllProductDetail {
+  display: flex;
+  flex-direction: column;
+}
+.adminAllProductDetail > span {
+  color: rgb(172, 166, 166);
+}
+
+.adminOrderProductImage > img {
+  width: 100px;
+  height: 100px;
+  margin-left: 150px;
+}

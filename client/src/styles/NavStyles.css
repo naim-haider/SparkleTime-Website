@@ -1,0 +1,100 @@
+.NavBody {
+  background: #161616 !important;
+}
+
+.NavButton {
+  background: #01dbc2;
+}
+
+.nav-link {
+  color: rgb(110, 109, 109);
+}
+
+.nav-link:hover {
+  color: #01dbc2;
+  filter: drop-shadow(0 0 15px #01dbc2);
+}
+
+.cartdiv {
+  right: 5px;
+  margin-top: 8px;
+}
+
+.navcart {
+  margin-top: 6px;
+  margin-right: 25px;
+  margin-left: 5px;
+}
+.navsearch {
+  outline: none;
+  border: 1px solid #01dbc2;
+  width: 100%;
+  /* padding: 8px 14px; */
+  background: transparent;
+  color: #fff;
+  letter-spacing: 0.1em;
+}
+
+.navsearchInput {
+  /* margin-top: 5px; */
+}
+
+.inputNav {
+  margin-top: 3px;
+  margin-bottom: 3px !important;
+  margin-right: 20px;
+}
+
+.navsearch::placeholder {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.navsearchbtn {
+  color: #01dbc2;
+  border-color: #01dbc2;
+}
+.navsearchbtn:hover {
+  background-color: #01dbc2;
+  filter: drop-shadow(0 0 10px #01dbc2);
+  color: white;
+}
+
+.navhome {
+  color: rgb(110, 109, 109);
+  text-decoration: none;
+  margin-top: 8px;
+  margin-right: 3px;
+}
+
+.navname {
+  color: rgb(110, 109, 109) !important;
+}
+
+.navname:hover {
+  color: #01dbc2 !important;
+  filter: drop-shadow(0 0 15px #01dbc2);
+}
+
+.navhome:hover {
+  color: #01dbc2 !important;
+  filter: drop-shadow(0 0 15px #01dbc2);
+}
+
+.navbar-brand {
+  color: #01dbc2;
+  filter: drop-shadow(0 0 15px #01dbc2);
+}
+.navdropdown {
+  background: #303030;
+  border: 1px solid rgb(110, 109, 109);
+  color: #01dbc2;
+}
+.navdropdown-item {
+  color: rgb(110, 109, 109);
+}
+.navdropdown-item:hover {
+  color: #01dbc2;
+  background-color: transparent;
+  filter: drop-shadow(0 0 15px #01dbc2);
+}

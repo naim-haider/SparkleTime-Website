@@ -1,0 +1,21 @@
+.allProduct-container {
+  background: #303030;
+  display: flex;
+}
+
+.card-section h1 {
+  color: #01dbc2;
+  filter: drop-shadow(0 0 10px #01dbc2);
+  margin-top: 10px;
+}
+
+.card-itmes {
+  background-color: #3c504ef6;
+}
+
+.card-body > h5 {
+  color: #01dbc2;
+}
+
+.card-body > p {
+}
