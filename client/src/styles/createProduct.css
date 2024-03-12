@@ -67,3 +67,10 @@
 .createP-select-div > select option {
   background: #6e6e6e;
 }
+
+.email-input {
+  padding: 5px;
+  border-radius: 5px;
+  color: #9b9a9a;
+  background-color: #414040 !important;
+}
