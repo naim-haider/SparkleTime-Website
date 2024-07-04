@@ -14,15 +14,20 @@ const CartPage = () => {
   const [clientToken, setClientToken] = useState("");
   const [instance, setInstance] = useState("");
   const [loading, setLoading] = useState(false);
+  var userId = auth?.user?._id;
 
-  console.log(cart);
+  console.log(auth?.user?._id);
   const navigate = useNavigate();
 
   //TOTAL PRICE
   const totalPrice = () => {
     try {
       let total = 0;
-      cart?.map((item) => (total = total + item.price));
+      cart?.map((item) => {
+        if (item[1].uId === userId) {
+          total = total + item[0].price;
+        }
+      });
       return total.toLocaleString("en-US", {
         style: "currency",
         currency: "USD",
@@ -35,7 +40,7 @@ const CartPage = () => {
   const removeCartItem = (id) => {
     try {
       let myCart = [...cart];
-      let index = myCart.findIndex((item) => item._id === id);
+      let index = myCart.findIndex((item) => item[0]._id === id);
       myCart.splice(index, 1);
       setCart(myCart);
       localStorage.setItem("cart", JSON.stringify(myCart));
@@ -81,6 +86,19 @@ const CartPage = () => {
       setLoading(false);
     }
   };
+
+  console.log(userId);
+  console.log(cart);
+  let count = 0;
+  const cartCount = () => {
+    cart.map((c) => {
+      if (c[1].uId === userId) {
+        count += 1;
+      }
+      return count;
+    });
+  };
+  cartCount();
   return (
     <Layout>
       <div className="cart-page mt-1">
@@ -91,8 +109,8 @@ const CartPage = () => {
                 ? "Hello Guest"
                 : `Hello  ${auth?.token && auth?.user?.name}`}
               <p className="text-center">
-                {cart?.length
-                  ? `You Have ${cart.length} items in your cart ${
+                {count > 0
+                  ? `You Have ${count} items in your cart ${
                       auth?.token ? "" : "Please login to checkout"
                     }`
                   : "Your Cart Is Empty"}
@@ -104,26 +122,30 @@ const CartPage = () => {
           <div className="row">
             <div className="col-md-7 cart-box p-0 m-0 ">
               {cart?.map((p) => (
-                <div className="row mb-2 p-3 card cart-items flex-row">
-                  <div className="col-md-4">
-                    <img
-                      src={`http://localhost:8080/api/product/product-photo/${p._id}`}
-                      className="card-img-top"
-                      alt={p.name}
-                    />
-                  </div>
-                  <div className="col-md-8 cart-items-details">
-                    <h5>{p.name}</h5>
-                    <h5>{p.description.substring(0, 30)}</h5>
-                    <h5>Price : {p.price}</h5>
-                    <button
-                      className="cart-remove-btn"
-                      onClick={() => removeCartItem(p._id)}
-                    >
-                      Remove
-                    </button>
-                  </div>
-                </div>
+                <>
+                  {p[1]?.uId === userId ? (
+                    <div className="row mb-2 p-3 card cart-items flex-row">
+                      <div className="col-md-4">
+                        <img
+                          src={`http://localhost:8080/api/product/product-photo/${p[0]._id}`}
+                          className="card-img-top"
+                          alt={p[0].name}
+                        />
+                      </div>
+                      <div className="col-md-8 cart-items-details">
+                        <h5>{p[0].name}</h5>
+                        <h5>{p[0].description.substring(0, 30)}</h5>
+                        <h5>Price : {p[0].price}</h5>
+                        <button
+                          className="cart-remove-btn"
+                          onClick={() => removeCartItem(p._id)}
+                        >
+                          Remove
+                        </button>
+                      </div>
+                    </div>
+                  ) : null}
+                </>
               ))}
             </div>
             <div className="col-md-5 cart-summary">

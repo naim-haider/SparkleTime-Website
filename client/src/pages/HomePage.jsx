@@ -7,6 +7,7 @@ import { useNavigate } from "react-router-dom";
 import { useCart } from "../context/cart";
 import toast from "react-hot-toast";
 import "../styles/Homepage.css";
+import { useAuth } from "../context/auth";
 
 const HomePage = () => {
   const [products, setProducts] = useState([]);
@@ -16,8 +17,10 @@ const HomePage = () => {
   const [total, setTotal] = useState(0);
   const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(false);
+  const [auth, setAuth] = useAuth();
 
   const [cart, setCart] = useCart();
+  console.log(cart);
 
   const navigate = useNavigate();
 
@@ -102,6 +105,9 @@ const HomePage = () => {
     }
   };
 
+  console.log(auth?.user?._id);
+  const userId = { uId: auth?.user?._id };
+
   const handleAddToCart = (p) => {
     // e.preventDefault();
     console.log(p);
@@ -110,8 +116,8 @@ const HomePage = () => {
     if (existingProduct) {
       toast.error("Product is already added");
     } else {
-      setCart([...cart, p]);
-      localStorage.setItem("cart", JSON.stringify([...cart, p]));
+      setCart([...cart, [p, userId]]);
+      localStorage.setItem("cart", JSON.stringify([...cart, [p, userId]]));
       toast.success("Item Added to Cart");
     }
   };

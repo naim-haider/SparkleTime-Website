@@ -205,10 +205,10 @@ const getOrdersController = async (req, res) => {
       .populate("buyer", "name");
     res.json(orders);
   } catch (error) {
-    console.log("Error While Geting Orders", error);
+    console.log("Error While Getting Orders", error);
     res.status(500).send({
       success: false,
-      message: "Error While Geting Orders",
+      message: "Error While Getting Orders",
       error,
     });
   }
@@ -222,10 +222,10 @@ const getAllOrdersController = async (req, res) => {
       .sort({ createdAt: -1 });
     res.json(orders);
   } catch (error) {
-    "Error While Geting Orders", console.log(error);
+    "Error While Getting Orders", console.log(error);
     res.status(500).send({
       success: false,
-      message: "Error While Geting Orders",
+      message: "Error While Getting Orders",
       error,
     });
   }

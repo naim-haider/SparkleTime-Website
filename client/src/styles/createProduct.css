@@ -74,3 +74,26 @@
   color: #9b9a9a;
   background-color: #414040 !important;
 }
+
+.deleteProduct-btn {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  background-color: #d83333;
+  filter: drop-shadow(0 0 10px #d83333);
+  color: white;
+  padding: 5px 0 5px 0;
+}
+
+.deleteProduct-btn:hover {
+  color: #d82e2e;
+  font-weight: 600;
+  background: transparent;
+  border-color: #db0101;
+  border: 1px solid #db0101;
+}
+
+.upd-inp {
+  color: rgb(172, 166, 166);
+}

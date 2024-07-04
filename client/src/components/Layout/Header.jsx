@@ -14,6 +14,8 @@ const Header = () => {
   const [cart] = useCart();
   const categories = useCategory();
 
+  var userId = auth?.user?._id;
+
   const handleLogout = () => {
     setAuth({
       ...auth,
@@ -23,6 +25,17 @@ const Header = () => {
       localStorage.removeItem("auth");
     toast.success("Logout Successfully");
   };
+
+  let count = 0;
+  const cartCount = () => {
+    cart.map((c) => {
+      if (c[1].uId === userId) {
+        count += 1;
+      }
+      return count;
+    });
+  };
+  cartCount();
   return (
     <>
       <nav className="navbar NavBody navbar-expand-lg bg-body-tertiary">
@@ -140,7 +153,7 @@ const Header = () => {
                 <NavLink to="/cart" className="">
                   <Badge
                     className="navbadge"
-                    count={cart?.length}
+                    count={count}
                     showZero
                     offset={[6, -1]}
                   >

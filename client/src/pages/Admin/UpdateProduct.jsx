@@ -5,6 +5,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
 import { Select } from "antd";
 import toast from "react-hot-toast";
+import "../../styles/createProduct.css";
 const { Option } = Select;
 
 const UpdateProduct = () => {
@@ -110,20 +111,20 @@ const UpdateProduct = () => {
   };
   return (
     <Layout title={"Dashboard - Update Product"}>
-      <div className="container-fuild m-3 p-3">
-        <div className="row">
+      <div className="container-fuild createProduct-container">
+        <div className="row createProduct-flex">
           <div className="col-md-3">
             <AdminMenu />
           </div>
-          <div className="col-md-9">
+          <div className="col-md-9 createP-flex">
             <h1>Update Product</h1>
-            <div className="m-1 w-75">
+            <div className="m-1 w-75 createP-select-div">
               <Select
                 bordered={false}
                 placeholder="Select a Category"
                 size="large"
                 showSearch
-                className="form-select mb-3"
+                className="form-select mb-3 createP-select"
                 onChange={(value) => {
                   setCategory(value);
                 }}
@@ -173,7 +174,7 @@ const UpdateProduct = () => {
                   type="text"
                   value={name}
                   placeholder="Write the product name"
-                  className="form-control"
+                  className="form-control createP-input upd-inp"
                   onChange={(e) => setName(e.target.value)}
                 />
               </div>
@@ -182,7 +183,7 @@ const UpdateProduct = () => {
                   type="text"
                   value={description}
                   placeholder="write a description"
-                  className="form-control"
+                  className="form-control createP-input upd-inp"
                   onChange={(e) => setDescription(e.target.value)}
                 />
               </div>
@@ -192,7 +193,7 @@ const UpdateProduct = () => {
                   type="number"
                   value={price}
                   placeholder="write a Price"
-                  className="form-control"
+                  className="form-control createP-input upd-inp"
                   onChange={(e) => setPrice(e.target.value)}
                 />
               </div>
@@ -200,8 +201,8 @@ const UpdateProduct = () => {
                 <input
                   type="number"
                   value={quantity}
+                  className="form-control createP-input upd-inp"
                   placeholder="write a quantity"
-                  className="form-control"
                   onChange={(e) => setQuantity(e.target.value)}
                 />
               </div>
@@ -211,7 +212,7 @@ const UpdateProduct = () => {
                   placeholder="Select Shipping "
                   size="large"
                   showSearch
-                  className="form-select mb-3"
+                  className="form-select mb-3 createP-input upd-inp"
                   onChange={(value) => {
                     setShipping(value);
                   }}
@@ -222,12 +223,12 @@ const UpdateProduct = () => {
                 </Select>
               </div>
               <div className="mb-3">
-                <button className="btn btn-primary" onClick={handleUpdate}>
+                <button className="createProduct-btn" onClick={handleUpdate}>
                   UPDATE PRODUCT
                 </button>
               </div>
               <div className="mb-3">
-                <button className="btn btn-danger" onClick={handleDelete}>
+                <button className="deleteProduct-btn" onClick={handleDelete}>
                   DELETE PRODUCT
                 </button>
               </div>
